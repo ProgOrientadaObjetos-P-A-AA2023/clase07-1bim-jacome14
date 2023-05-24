@@ -1,17 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package paquete1;
 
-public class Profesor{
-    private String nombre;
+public class Profesor2 {
+      private String nombre;
     private String tipo;
+    private int edad;
     
-    public Profesor(String n, String t){
+    public Profesor2(String n, String t, int e){
         nombre = n;
         tipo = t;
+        edad = e;
     }
     
     public void establecerNombre(String n){
@@ -21,24 +19,30 @@ public class Profesor{
     public void establecerTipo(String n){
         tipo = n;
     }
-    
+    public void estableceredad(int n){
+        edad = n;
+               
+        }
     public String obtenerNombre(){
         return nombre;
     }
     
     public String obtenerTipo(){
         return tipo;
+    }   
+    public int obteneredad(){
+        return edad ;
     }
-       @Override
+     @Override
+     
     public String toString() {
-        
+
         String cadena = String.format("Datos del Profesor\n"
                 + "Nombre del Profesor: %s\n"
-                + "Tipo del Profesor: %s\n",
-                obtenerNombre(),obtenerTipo());
+                + "Tipo del Profesor: %s\n"
+                + "Edad del Profesor: %d",
+                obtenerNombre(), obtenerTipo(), obteneredad());
         return cadena;
     }
-    
-    
+
 }
- 

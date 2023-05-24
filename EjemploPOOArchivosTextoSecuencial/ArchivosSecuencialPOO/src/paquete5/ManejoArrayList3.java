@@ -41,7 +41,12 @@ public class ManejoArrayList3 {
                     calificaciones.get(i).obtenerNombreMateria(),
                     calificaciones.get(i).obtenerNota());
         }
-        
-        
+      promedio=promedio+calificaciones.get(i).obtenernota();
     }
-}
+      promedio  = promedio/calificaciones.size;
+      
+       
+    }
+        
+    
+
